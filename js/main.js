@@ -126,7 +126,7 @@
   /* ──────────────────────────────────
      5. Project Card 3D Tilt
   ────────────────────────────────── */
-  const projectCards = document.querySelectorAll('.project-card');
+  const projectCards = document.querySelectorAll('.pcard');
   const MAX_TILT = 8; // degrees for visible 3D pop
 
   projectCards.forEach(card => {
@@ -203,8 +203,7 @@
      7. Project Filter
   ────────────────────────────────── */
   const filterBtns  = document.querySelectorAll('.filter-btn');
-  const projCards   = document.querySelectorAll('.project-card[data-cat]');
-  const projDuos    = document.querySelectorAll('.projects-duo');
+  const projCards   = document.querySelectorAll('.pcard[data-cat]');
 
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -226,6 +225,10 @@
           card.style.opacity  = '0.12';
           card.style.transform = 'scale(0.96) translateZ(0)';
           card.style.pointerEvents = 'none';
+          setTimeout(() => {
+            if(!card.style.pointerEvents) return;
+            card.style.display = 'none'; // fully hide to maintain grid flow
+          }, 400); // match transition duration
         }
       });
     });

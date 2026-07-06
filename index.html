@@ -26,7 +26,6 @@
         <a href="#about"      class="nav-link">About</a>
         <a href="#skills"     class="nav-link">Skills</a>
         <a href="#projects"   class="nav-link">Projects</a>
-        <a href="#experience" class="nav-link">Experience</a>
         <a href="#contact"    class="nav-link">Contact</a>
       </nav>
       <a href="#contact" class="btn primary nav-cta" id="nav-cta-btn">Hire Me</a>
@@ -41,7 +40,6 @@
     <a href="#about"      class="mobile-link">About</a>
     <a href="#skills"     class="mobile-link">Skills</a>
     <a href="#projects"   class="mobile-link">Projects</a>
-    <a href="#experience" class="mobile-link">Experience</a>
     <a href="#contact"    class="mobile-link">Contact</a>
   </div>
 
@@ -198,286 +196,296 @@
 
       <!-- Filter tabs -->
       <div class="filter-tabs" data-reveal>
-        <button class="filter-btn active" data-filter="all"        id="filter-all">All</button>
-        <button class="filter-btn"        data-filter="client"     id="filter-client">Client Work</button>
-        <button class="filter-btn"        data-filter="hackathon"  id="filter-hackathon">Hackathon</button>
-        <button class="filter-btn"        data-filter="ai"         id="filter-ai">AI</button>
+        <button class="filter-btn active" data-filter="all"       id="filter-all">All</button>
+        <button class="filter-btn"        data-filter="client"    id="filter-client">Client Work</button>
+        <button class="filter-btn"        data-filter="hackathon" id="filter-hackathon">Hackathon</button>
+        <button class="filter-btn"        data-filter="ai"        id="filter-ai">AI</button>
+        <button class="filter-btn"        data-filter="tools"     id="filter-tools">Tools</button>
       </div>
 
-      <!-- Featured large project -->
-      <div class="projects-feed">
+      <!-- ── NEW MASONRY GRID ── -->
+      <div class="projects-masonry">
 
-        <!-- Luminous Civic (Featured Large AI & Hackathon Project) -->
-        <article class="project-card project-large project-accent" data-cat="ai hackathon" data-reveal id="proj-luminous-civic">
-          <div class="project-img-wrap">
-            <div class="project-browser-frame">
-              <div class="browser-chrome">
-                <div class="chrome-dots"><span></span><span></span><span></span></div>
-                <div class="chrome-url">luminous-civic.vercel.app</div>
-              </div>
-              <div class="browser-image-wrap">
-                <img src="assets/project/Luminous_civic.png" alt="Luminous Civic — AI-Powered Civic Platform" class="project-screenshot" />
+        <!-- 01: Dr. Makarand Portfolio -->
+        <article class="pcard" data-cat="client" data-reveal data-delay="80" id="proj-dr-mak">
+          <div class="pcard-img">
+            <img src="assets/project/dr-mak.png" alt="Dr. Makarand Jawadekar Portfolio" />
+            <div class="pcard-overlay">
+              <div class="pcard-overlay-inner">
+                <span class="pcard-num">01</span>
+                <div class="pcard-overlay-tags"><span class="ptag ptag-client">Client Work</span></div>
+                <h3>Dr. Makarand Jawadekar</h3>
+                <p>Modern professional portfolio — GSAP animations, fully responsive, SEO-optimized, deployed on Vercel.</p>
+                <div class="pcard-stack-inline"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>GSAP</span><span>Vercel</span></div>
+                <a href="https://dr-makarand-portfolio.vercel.app/" target="_blank" rel="noopener" class="pcard-link" id="drmak-live-btn">View Live ↗</a>
               </div>
             </div>
           </div>
-          <div class="project-meta">
-            <div class="project-top">
-              <span class="project-cat ai-tag hackathon-tag">AI &amp; Hackathon Project</span>
-              <div class="project-links">
-                <a href="https://luminous-civic.vercel.app/" target="_blank" rel="noopener" class="btn-icon" aria-label="Live Demo" id="luminous-live-btn">↗</a>
+          <div class="pcard-footer">
+            <div><span class="pcard-label">Client Work</span><h3 class="pcard-title">Dr. Makarand — Portfolio</h3></div>
+            <a href="https://dr-makarand-portfolio.vercel.app/" target="_blank" rel="noopener" class="pcard-arrow">↗</a>
+          </div>
+        </article>
+
+        <!-- 02: Luminous Civic -->
+        <article class="pcard" data-cat="ai hackathon" data-reveal id="proj-luminous-civic">
+          <div class="pcard-img">
+            <img src="assets/project/Luminous_civic.png" alt="Luminous Civic" />
+            <div class="pcard-overlay">
+              <div class="pcard-overlay-inner">
+                <span class="pcard-num">02</span>
+                <div class="pcard-overlay-tags"><span class="ptag ptag-ai">AI</span><span class="ptag ptag-hackathon">Hackathon</span></div>
+                <h3>Luminous Civic</h3>
+                <p>AI-driven civic complaint platform — auto-identifies infrastructure issues, maps authorities, and tracks resolution in real time.</p>
+                <div class="pcard-stack-inline"><span>Python</span><span>FastAPI</span><span>Gemini API</span><span>CrewAI</span><span>Leaflet.js</span></div>
+                <a href="https://luminous-civic.vercel.app/" target="_blank" rel="noopener" class="pcard-link" id="luminous-live-btn">View Live ↗</a>
               </div>
             </div>
-            <h3 class="project-title">Luminous Civic</h3>
-            <p class="project-desc">
-              Luminous Civic is an AI-driven platform that simplifies how citizens report and track public infrastructure issues. Users can upload an image or describe a problem, and the system automatically identifies the issue, determines the responsible government authority, generates a structured complaint, and enables real-time status tracking.
-            </p>
-            <ul class="project-highlights" style="margin-bottom: var(--sp3); display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 8px;">
-              <li style="font-size: 0.88rem; color: var(--text-2); display: flex; align-items: center; gap: 6px;">🤖 AI image &amp; text analysis</li>
-              <li style="font-size: 0.88rem; color: var(--text-2); display: flex; align-items: center; gap: 6px;">📍 Auto-location &amp; authority mapping</li>
-              <li style="font-size: 0.88rem; color: var(--text-2); display: flex; align-items: center; gap: 6px;">📝 Smart complaint generation</li>
-              <li style="font-size: 0.88rem; color: var(--text-2); display: flex; align-items: center; gap: 6px;">📊 Real-time tracking dashboard</li>
-              <li style="font-size: 0.88rem; color: var(--text-2); display: flex; align-items: center; gap: 6px;">📧 Automated updates &amp; notifications</li>
-              <li style="font-size: 0.88rem; color: var(--text-2); display: flex; align-items: center; gap: 6px;">🗺️ Interactive OpenStreetMap visualization</li>
-            </ul>
-            <div class="project-stack">
-              <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Python</span><span>FastAPI</span><span>SQLite / Supabase</span><span>Gemini API</span><span>CrewAI</span><span>Leaflet.js</span>
+          </div>
+          <div class="pcard-footer">
+            <div><span class="pcard-label">AI · Hackathon</span><h3 class="pcard-title">Luminous Civic</h3></div>
+            <a href="https://luminous-civic.vercel.app/" target="_blank" rel="noopener" class="pcard-arrow">↗</a>
+          </div>
+        </article>
+
+        <!-- 03: Chourangi Group -->
+        <article class="pcard" data-cat="client" data-reveal data-delay="140" id="proj-chourangi">
+          <div class="pcard-img">
+            <img src="assets/project/Chourangi Grp.png" alt="Chourangi Group" />
+            <div class="pcard-overlay">
+              <div class="pcard-overlay-inner">
+                <span class="pcard-num">03</span>
+                <div class="pcard-overlay-tags"><span class="ptag ptag-client">Client Work</span></div>
+                <h3>Chourangi Group</h3>
+                <p>Corporate website spanning real estate, infrastructure, hospitality &amp; media. WordPress + SEO optimized.</p>
+                <div class="pcard-stack-inline"><span>WordPress</span><span>Elementor</span><span>CSS</span><span>SEO</span></div>
+                <a href="https://chourangi.com/" target="_blank" rel="noopener" class="pcard-link" id="chourangi-live-btn">View Live ↗</a>
+              </div>
+            </div>
+          </div>
+          <div class="pcard-footer">
+            <div><span class="pcard-label">Client Work</span><h3 class="pcard-title">Chourangi Group — Corporate</h3></div>
+            <a href="https://chourangi.com/" target="_blank" rel="noopener" class="pcard-arrow">↗</a>
+          </div>
+        </article>
+
+        <!-- 04: AI Photo Generator -->
+        <article class="pcard" data-cat="tools ai" data-reveal data-delay="80" id="proj-photogen">
+          <div class="pcard-img">
+            <img src="assets/project/photogen.png" alt="AI Photo Generator Tool" />
+            <div class="pcard-overlay">
+              <div class="pcard-overlay-inner">
+                <span class="pcard-num">04</span>
+                <div class="pcard-overlay-tags"><span class="ptag ptag-ai">AI</span><span class="ptag ptag-tools">Tool</span></div>
+                <h3>AI Photo Generator</h3>
+                <p>Web-based AI image generation tool with prompt engineering, style presets, and instant gallery download.</p>
+                <div class="pcard-stack-inline"><span>JavaScript</span><span>Gemini API</span><span>HTML</span><span>CSS</span></div>
+                <a href="#" class="pcard-link" id="photogen-live-btn">View Project ↗</a>
+              </div>
+            </div>
+          </div>
+          <div class="pcard-footer">
+            <div><span class="pcard-label">AI · Tool</span><h3 class="pcard-title">AI Photo Generator</h3></div>
+            <span class="pcard-arrow">↗</span>
+          </div>
+        </article>
+
+        <!-- 05: BMM Badge Generator -->
+        <article class="pcard" data-cat="ai hackathon" data-reveal data-delay="120" id="proj-bmm-badge">
+          <div class="pcard-img">
+            <img src="assets/project/BMM_badge.png" alt="BMM Badge Generator" />
+            <div class="pcard-overlay">
+              <div class="pcard-overlay-inner">
+                <span class="pcard-num">05</span>
+                <div class="pcard-overlay-tags"><span class="ptag ptag-ai">AI</span><span class="ptag ptag-hackathon">Hackathon</span></div>
+                <h3>BMM Badge Generator</h3>
+                <p>Badge creation platform for BMM Seattle 2026 — live preview, custom layouts, instant PNG download.</p>
+                <div class="pcard-stack-inline"><span>HTML</span><span>Canvas API</span><span>Supabase</span><span>JS</span></div>
+                <a href="https://bmm2026-badge-generator.vercel.app/" target="_blank" rel="noopener" class="pcard-link" id="bmm-badge-live-btn">View Live ↗</a>
+              </div>
+            </div>
+          </div>
+          <div class="pcard-footer">
+            <div><span class="pcard-label">AI · Hackathon</span><h3 class="pcard-title">BMM Badge Generator</h3></div>
+            <a href="https://bmm2026-badge-generator.vercel.app/" target="_blank" rel="noopener" class="pcard-arrow">↗</a>
+          </div>
+        </article>
+
+        <!-- 06: HydroSense -->
+        <article class="pcard" data-cat="hackathon ai" data-reveal data-delay="160" id="proj-hydrosense">
+          <div class="pcard-img">
+            <img src="assets/project/hydrosense.png" alt="HydroSense" />
+            <div class="pcard-overlay">
+              <div class="pcard-overlay-inner">
+                <span class="pcard-num">06</span>
+                <div class="pcard-overlay-tags"><span class="ptag ptag-hackathon">SIH</span><span class="ptag ptag-ai">IoT · AI</span></div>
+                <h3>HydroSense</h3>
+                <p>IoT smart water quality monitoring — real-time web dashboard with Firebase, Arduino &amp; ESP32 sensors.</p>
+                <div class="pcard-stack-inline"><span>Arduino</span><span>ESP32</span><span>Firebase</span><span>Netlify</span></div>
+                <a href="https://hydrosense-1.netlify.app/" target="_blank" rel="noopener" class="pcard-link" id="hydrosense-live-btn">View Live ↗</a>
+              </div>
+            </div>
+          </div>
+          <div class="pcard-footer">
+            <div><span class="pcard-label">IoT · AI · Hackathon</span><h3 class="pcard-title">HydroSense</h3></div>
+            <a href="https://hydrosense-1.netlify.app/" target="_blank" rel="noopener" class="pcard-arrow">↗</a>
+          </div>
+        </article>
+
+        <!-- 07: AI Chatbot Development — WIDE DARK CARD -->
+        <article class="pcard pcard-wide pcard-dark" data-cat="ai" data-reveal id="proj-chatbot">
+          <div class="pcard-dark-inner">
+            <div class="pcard-dark-icon">
+              <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
+            </div>
+            <div class="pcard-dark-content">
+              <div class="pcard-overlay-tags" style="margin-bottom:.75rem;"><span class="ptag ptag-ai">AI · Multiple Clients</span></div>
+              <h3 class="pcard-dark-title">AI Chatbot Development</h3>
+              <p class="pcard-dark-desc">Custom LLM-powered chatbots deployed for multiple business clients — customer support automation, lead generation, and intelligent FAQ systems with natural conversation flows.</p>
+              <div class="pcard-stack-inline" style="margin-top:1rem;"><span>OpenAI GPT</span><span>Gemini API</span><span>Langchain</span><span>Python</span><span>Node.js</span><span>Twilio</span></div>
+            </div>
+            <div class="pcard-dark-visual">
+              <div class="chat-bubble bot">Hello! How can I help you today?</div>
+              <div class="chat-bubble user">I need support with my order.</div>
+              <div class="chat-bubble bot">Sure! Let me pull up your details...</div>
+              <div class="chat-bubble user">Thanks!</div>
+              <div class="chat-typing"><span></span><span></span><span></span></div>
             </div>
           </div>
         </article>
 
-        <div class="projects-duo">
-
-          <!-- BMM Badge Generator (AI & Hackathon Project) -->
-          <article class="project-card" data-cat="ai hackathon" data-reveal id="proj-bmm-badge">
-            <div class="project-img-wrap">
-              <div class="project-browser-frame">
-                <div class="browser-chrome">
-                  <div class="chrome-dots"><span></span><span></span><span></span></div>
-                  <div class="chrome-url">bmm2026-badge-generator.vercel.app</div>
-                </div>
-                <div class="browser-image-wrap">
-                  <img src="assets/project/BMM_badge.png" alt="BMM Seattle 2026 Badge Generator" class="project-screenshot" />
-                </div>
-              </div>
+        <!-- 08: Multi-Client Web Dev — WIDE DARK CARD -->
+        <article class="pcard pcard-wide pcard-dark pcard-dark-alt" data-cat="client" data-reveal data-delay="100" id="proj-client-web">
+          <div class="pcard-dark-inner">
+            <div class="pcard-dark-icon">
+              <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
             </div>
-            <div class="project-meta">
-              <div class="project-top">
-                <span class="project-cat ai-tag hackathon-tag">AI &amp; Hackathon</span>
-                <a href="https://bmm2026-badge-generator.vercel.app/" target="_blank" rel="noopener" class="btn ghost small" id="bmm-badge-live-btn" style="margin-left: auto;">Live Demo ↗</a>
-              </div>
-              <h3 class="project-title">BMM Badge Generator</h3>
-              <p class="project-desc">Web-based badge generation platform for the BMM Seattle 2026 Convention. Enables attendees to build personalized profile badges with live preview, customized layouts, and instant downloads. Optimized for all devices.</p>
-              <div class="project-stack"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Canvas API</span><span>Supabase</span><span>Supabase Auth</span></div>
+            <div class="pcard-dark-content">
+              <div class="pcard-overlay-tags" style="margin-bottom:.75rem;"><span class="ptag ptag-client">Client Work · Ongoing</span></div>
+              <h3 class="pcard-dark-title">Multi-Client Web Dev &amp; Maintenance</h3>
+              <p class="pcard-dark-desc">Ongoing development and maintenance for multiple clients across industries — delivering business sites, landing pages, performance fixes, SEO improvements, and feature updates.</p>
+              <div class="pcard-stack-inline" style="margin-top:1rem;"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>WordPress</span><span>React</span><span>SEO</span><span>Git</span></div>
             </div>
-          </article>
-
-          <!-- HydroSense (SIH Hackathon Project) -->
-          <article class="project-card project-accent" data-cat="hackathon" data-reveal data-delay="120" id="proj-hydrosense">
-            <div class="project-img-wrap">
-              <div class="project-img-placeholder" style="background:linear-gradient(135deg,#0a1628 0%,#0d2137 100%);">
-                <div class="browser-chrome">
-                  <div class="chrome-dots"><span></span><span></span><span></span></div>
-                  <div class="chrome-url">hydrosense.app</div>
-                </div>
-                <div class="browser-content compact">
-                  <div class="mock-hero-bar short" style="background:rgba(85,214,255,0.25);"></div>
-                  <div class="mock-content-grid">
-                    <div class="mock-card" style="background:rgba(85,214,255,0.12);"></div>
-                    <div class="mock-card"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="project-meta">
-              <div class="project-top">
-                <span class="project-cat hackathon-tag">SIH Hackathon</span>
-                <a href="#" class="btn ghost small" id="hydrosense-live-btn" style="margin-left: auto;">View Project ↗</a>
-              </div>
-              <h3 class="project-title">HydroSense</h3>
-              <p class="project-desc">IoT‑based smart water quality monitoring system built for Smart India Hackathon 2024. Represents national‑level competition entry combining hardware sensors and web dashboards.</p>
-              <div class="project-stack"><span>Python</span><span>IoT</span><span>Flask</span><span>React</span></div>
-            </div>
-          </article>
-
-        </div>
-
-        <!-- Chourangi Group (Client Work Large Card) -->
-        <article class="project-card project-large" data-cat="client" data-reveal id="proj-chourangi">
-          <div class="project-img-wrap">
-            <div class="project-img-placeholder" style="background:linear-gradient(135deg,#1a1a2e 0%,#16213e 100%);">
-              <div class="browser-chrome">
-                <div class="chrome-dots"><span></span><span></span><span></span></div>
-                <div class="chrome-url">chourangigroup.com</div>
-              </div>
-              <div class="browser-content">
-                <div class="mock-hero-bar"></div>
-                <div class="mock-nav"></div>
-                <div class="mock-content-grid">
-                  <div class="mock-card"></div><div class="mock-card"></div><div class="mock-card"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="project-meta">
-            <div class="project-top">
-              <span class="project-cat">Client Work</span>
-              <div class="project-links">
-                <a href="#" class="btn-icon" aria-label="Live Demo" id="chourangi-live-btn">↗</a>
-              </div>
-            </div>
-            <h3 class="project-title">Chourangi Group</h3>
-            <p class="project-desc">Full business website for Chourangi Group, featuring multi‑page architecture, responsive design, contact integration, and optimised SEO for the client's service offerings.</p>
-            <div class="project-stack">
-              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span>
+            <div class="pcard-dark-visual pcard-dark-visual-grid">
+              <div class="mini-site"><div class="ms-bar"></div><div class="ms-content"><div></div><div></div></div></div>
+              <div class="mini-site"><div class="ms-bar" style="background:rgba(85,214,255,0.5);"></div><div class="ms-content"><div></div><div></div></div></div>
+              <div class="mini-site"><div class="ms-bar" style="background:rgba(34,197,94,0.5);"></div><div class="ms-content"><div></div><div></div></div></div>
             </div>
           </div>
         </article>
 
-        <div class="projects-duo">
+      </div><!-- /projects-masonry -->
 
-          <!-- AI Chatbots & Voice Agents -->
-          <article class="project-card" data-cat="ai" data-reveal id="proj-chatbot">
-            <div class="project-img-wrap">
-              <div class="project-img-placeholder" style="background:linear-gradient(135deg,#120d22 0%,#1a1230 100%);">
-                <div class="browser-chrome">
-                  <div class="chrome-dots"><span></span><span></span><span></span></div>
-                  <div class="chrome-url">ai-chatbot.demo</div>
-                </div>
-                <div class="browser-content compact">
-                  <div class="mock-chat">
-                    <div class="mock-msg bot"></div>
-                    <div class="mock-msg user"></div>
-                    <div class="mock-msg bot short"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="project-meta">
-              <div class="project-top">
-                <span class="project-cat ai-tag">AI</span>
-                <a href="#" class="btn ghost small" id="chatbot-live-btn" style="margin-left: auto;">View Project ↗</a>
-              </div>
-              <h3 class="project-title">AI Chatbots &amp; Voice Agents</h3>
-              <p class="project-desc">Custom LLM‑powered chatbots and voice agents deployed for real business clients.</p>
-              <div class="project-stack"><span>OpenAI</span><span>Python</span><span>Twilio</span></div>
-            </div>
-          </article>
-
-          <!-- Cybersecurity Framework -->
-          <article class="project-card" data-cat="client" data-reveal data-delay="120" id="proj-cyber">
-            <div class="project-img-wrap">
-              <div class="project-img-placeholder" style="background:linear-gradient(135deg,#0d1a0d 0%,#0f1f0f 100%);">
-                <div class="browser-chrome">
-                  <div class="chrome-dots"><span></span><span></span><span></span></div>
-                  <div class="chrome-url">cybersec-framework</div>
-                </div>
-                <div class="browser-content compact">
-                  <div class="mock-hero-bar short" style="background:rgba(109,93,246,0.3);"></div>
-                  <div class="mock-content-grid">
-                    <div class="mock-card"></div><div class="mock-card"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="project-meta">
-              <div class="project-top">
-                <span class="project-cat">Client Work</span>
-                <a href="#" class="btn ghost small" id="cyber-live-btn" style="margin-left: auto;">View Project ↗</a>
-              </div>
-              <h3 class="project-title">Cybersecurity Framework</h3>
-              <p class="project-desc">Security analysis dashboard and reporting framework for client internal use.</p>
-              <div class="project-stack"><span>Python</span><span>Django</span><span>PostgreSQL</span></div>
-            </div>
-          </article>
-
-        </div>
-
-        <!-- GitHub CTA -->
-        <div class="github-cta" data-reveal>
-          <p>And many more projects built for real clients.</p>
-          <a href="https://github.com/JaySaner" target="_blank" rel="noopener" class="btn primary" id="github-btn">
-            View GitHub →
-          </a>
-        </div>
-
+      <!-- GitHub CTA -->
+      <div class="github-cta" data-reveal>
+        <p>And many more projects built for real clients.</p>
+        <a href="https://github.com/JaySaner" target="_blank" rel="noopener" class="btn primary" id="github-btn">View GitHub →</a>
       </div>
+
     </div>
   </section>
-
-  <!-- ═══════════════════════════ EXPERIENCE ═══════════════════════════ -->
-  <section id="experience" class="section">
-    <div class="container">
-      <div class="section-header" data-reveal>
-        <p class="section-eyebrow">Background</p>
-        <h2 class="section-heading">Experience &amp;<br/>Education</h2>
-      </div>
-
-      <div class="timeline" id="timeline">
-
-        <div class="timeline-item" data-reveal>
-          <div class="timeline-node"></div>
-          <div class="timeline-body">
-            <div class="timeline-date">2024 — Present</div>
-            <h3 class="timeline-title">Freelance Software Developer</h3>
-            <p class="timeline-org">Self‑Employed · Remote</p>
-            <p class="timeline-desc">Building and delivering full‑stack web applications, AI chatbots, voice agents, and SaaS products for real clients across multiple industries. Focus on premium UI/UX and production‑grade code quality.</p>
-            <div class="timeline-tags"><span>Web Dev</span><span>AI</span><span>SaaS</span></div>
-          </div>
-        </div>
-
-        <div class="timeline-item" data-reveal data-delay="100">
-          <div class="timeline-node"></div>
-          <div class="timeline-body">
-            <div class="timeline-date">2024</div>
-            <h3 class="timeline-title">Smart India Hackathon (SIH) Participant</h3>
-            <p class="timeline-org">Government of India · National Level</p>
-            <p class="timeline-desc">Developed HydroSense — an IoT‑based smart water quality monitoring system. Competed at a national level representing the institution with a full‑stack solution combining hardware sensors and a web dashboard.</p>
-            <div class="timeline-tags"><span>IoT</span><span>Python</span><span>Hackathon</span></div>
-          </div>
-        </div>
-
-        <div class="timeline-item" data-reveal data-delay="200">
-          <div class="timeline-node"></div>
-          <div class="timeline-body">
-            <div class="timeline-date">2022 — Present</div>
-            <h3 class="timeline-title">B.E. Electronics &amp; Telecommunication Engineering</h3>
-            <p class="timeline-org">University · Pune, India</p>
-            <p class="timeline-desc">Third‑year undergraduate student pursuing Electronics &amp; Telecommunication Engineering. Alongside academics, continuously building software products and deepening expertise in AI and web technologies.</p>
-            <div class="timeline-tags"><span>ENTC</span><span>Engineering</span></div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
+  
   <!-- ═══════════════════════════ ACHIEVEMENTS ═══════════════════════════ -->
   <section id="achievements" class="section">
     <div class="container">
       <div class="section-header" data-reveal>
         <p class="section-eyebrow">Recognition</p>
-        <h2 class="section-heading">Milestones</h2>
+        <h2 class="section-heading">Milestones &amp; Impact</h2>
       </div>
-      <div class="achievements-grid">
+      <div class="achievements-grid achievements-grid-v2">
 
-        <div class="achievement-card glass-matte" data-reveal>
-          <div class="ach-icon">🏆</div>
-          <p class="ach-text">Participated in Smart India Hackathon 2024 at national level</p>
+        <div class="achievement-card-v2 glass-matte" data-reveal>
+          <div class="ach-icon-v2">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/>
+              <path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/>
+              <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/>
+              <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/>
+            </svg>
+          </div>
+          <div class="ach-content-v2">
+            <span class="ach-number">SIH 2024</span>
+            <h4 class="ach-title-v2">Smart India Hackathon</h4>
+            <p class="ach-text-v2">National-level participation with HydroSense — an IoT smart water monitoring system representing the institution.</p>
+          </div>
         </div>
 
-        <div class="achievement-card glass-matte" data-reveal data-delay="80">
-          <div class="ach-icon">🚀</div>
-          <p class="ach-text">Delivered 10+ production websites for real clients as a freelancer</p>
+        <div class="achievement-card-v2 glass-matte" data-reveal data-delay="80">
+          <div class="ach-icon-v2">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="16" height="16" x="2" y="2" rx="2"/><path d="M10 2v4"/><path d="M14 2v4"/>
+              <path d="M10 18v4"/><path d="M14 18v4"/>
+              <path d="M2 10h4"/><path d="M2 14h4"/>
+              <path d="M18 10h4"/><path d="M18 14h4"/>
+            </svg>
+          </div>
+          <div class="ach-content-v2">
+            <span class="ach-number">10+</span>
+            <h4 class="ach-title-v2">Production Websites Delivered</h4>
+            <p class="ach-text-v2">Freelance web development across diverse industries — from corporate portals to personal portfolios and business platforms.</p>
+          </div>
         </div>
 
-        <div class="achievement-card glass-matte" data-reveal data-delay="160">
-          <div class="ach-icon">🤖</div>
-          <p class="ach-text">Built and deployed AI chatbots &amp; voice agents for business clients</p>
+        <div class="achievement-card-v2 glass-matte" data-reveal data-delay="160">
+          <div class="ach-icon-v2">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 8V4H8"/>
+              <rect width="16" height="12" x="4" y="8" rx="2"/>
+              <path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/>
+            </svg>
+          </div>
+          <div class="ach-content-v2">
+            <span class="ach-number">Multi-Client</span>
+            <h4 class="ach-title-v2">AI Chatbots &amp; Voice Agents</h4>
+            <p class="ach-text-v2">Built and deployed LLM-powered chatbots and voice agents for real businesses using OpenAI, Gemini, and Langchain.</p>
+          </div>
         </div>
 
-        <div class="achievement-card glass-matte" data-reveal data-delay="240">
-          <div class="ach-icon">⚡</div>
-          <p class="ach-text">Built premium SaaS products with modern full‑stack architecture</p>
+        <div class="achievement-card-v2 glass-matte" data-reveal data-delay="240">
+          <div class="ach-icon-v2">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m13 2-2 2.5h3L12 7"/>
+              <path d="M10 14v-3a2 2 0 1 1 4 0v3"/>
+              <path d="M7.5 14C7 15 7 15.5 7 17a5 5 0 0 0 10 0c0-1.5 0-2-0.5-3"/>
+              <path d="M7 11.7C5.4 10.7 4 8.5 4 6a8 8 0 0 1 16 0c0 2.5-1.4 4.7-3 5.7"/>
+            </svg>
+          </div>
+          <div class="ach-content-v2">
+            <span class="ach-number">SaaS</span>
+            <h4 class="ach-title-v2">Premium Products Built</h4>
+            <p class="ach-text-v2">Engineered full-stack SaaS products with modern architecture — combining clean UI, performant backends, and scalable infrastructure.</p>
+          </div>
+        </div>
+
+        <div class="achievement-card-v2 glass-matte" data-reveal data-delay="300">
+          <div class="ach-icon-v2">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="3"/>
+              <path d="M12 2v3"/><path d="M12 19v3"/><path d="M4.22 4.22l2.12 2.12"/>
+              <path d="M17.66 17.66l2.12 2.12"/><path d="M2 12h3"/><path d="M19 12h3"/>
+              <path d="M4.22 19.78l2.12-2.12"/><path d="M17.66 6.34l2.12-2.12"/>
+            </svg>
+          </div>
+          <div class="ach-content-v2">
+            <span class="ach-number">3+ Yrs</span>
+            <h4 class="ach-title-v2">Coding Experience</h4>
+            <p class="ach-text-v2">Continuously building real-world projects, mastering full-stack development, AI integration, and hardware-software systems since 2022.</p>
+          </div>
+        </div>
+
+        <div class="achievement-card-v2 glass-matte" data-reveal data-delay="320">
+          <div class="ach-icon-v2">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14"/>
+              <path d="m7.5 4.27 9 5.15"/><polyline points="3.29 7 12 12 20.71 7"/><line x1="12" x2="12" y1="22" y2="12"/>
+              <circle cx="18.5" cy="15.5" r="2.5"/><path d="M20.27 17.27 22 19"/>
+            </svg>
+          </div>
+          <div class="ach-content-v2">
+            <span class="ach-number">ENTC</span>
+            <h4 class="ach-title-v2">Engineering Foundation</h4>
+            <p class="ach-text-v2">Third-year Electronics &amp; Telecommunication Engineering student — bridging hardware intuition with modern software development.</p>
+          </div>
         </div>
 
       </div>
